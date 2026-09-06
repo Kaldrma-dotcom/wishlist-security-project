@@ -1,0 +1,132 @@
+:root {
+    --bg: #0f1419;
+    --card: #1a2330;
+    --text: #e8eef5;
+    --muted: #9aa8b8;
+    --accent: #3d8bfd;
+    --danger: #e05a5a;
+    --ok: #3ecf8e;
+    --border: #2b3a4d;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Segoe UI, system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+}
+
+.wrap {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 28px 16px 48px;
+}
+
+h2, h3 { margin-top: 0; }
+a { color: var(--accent); }
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 16px;
+}
+
+.nav {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+    color: var(--muted);
+}
+
+label { display: block; margin-bottom: 12px; }
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    max-width: 420px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: #0f1419;
+    color: var(--text);
+}
+
+button, .btn {
+    background: var(--accent);
+    color: #fff;
+    border: 0;
+    border-radius: 8px;
+    padding: 8px 14px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button.danger { background: var(--danger); }
+button.ghost {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+.error { color: var(--danger); }
+.success { color: var(--ok); }
+.muted { color: var(--muted); }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+th, td {
+    border-bottom: 1px solid var(--border);
+    padding: 10px 8px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th { color: var(--muted); font-weight: 600; }
+
+.poster {
+    width: 48px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 4px;
+    background: #0f1419;
+}
+
+.search-results {
+    display: grid;
+    gap: 8px;
+    margin: 12px 0 16px;
+}
+
+.search-item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    background: #0f1419;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    color: inherit;
+}
+
+.search-item:hover { border-color: var(--accent); }
+
+.hidden { display: none; }
+
+.inline-form { display: inline; }
