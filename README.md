@@ -13,5 +13,4 @@ through a couple of free APIs instead of typing everything by hand.
 
 ## Database
 - `users` — id, username, password_hash, failed_attempts, locked_until, created_at
-- `watchlist_items` — id, user_id (FK), title, type, status, rating, notes, poster_url, external_id, created_at
-- 
+- `watchlist_items` — id, user_id (FK), title, type, status, rating, notes, poster_url, external_id, created_at 
