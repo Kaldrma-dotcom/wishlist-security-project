@@ -10,6 +10,7 @@ if (!$https && PHP_SAPI !== 'cli') {
     exit;
 }
 
+header('Strict-Transport-Security: max-age=31536000; includeSubDomains');
 header('X-Content-Type-Options: nosniff');
 header('X-Frame-Options: DENY');
 header('Referrer-Policy: no-referrer');
