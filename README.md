@@ -10,3 +10,8 @@ through a couple of free APIs instead of typing everything by hand.
 - Auth: PHP sessions (no framework)
 - Apache via XAMPP, HTTPS with a self-signed cert
 - Movie search: IMDb suggestion API / Show search: TVMaze API (No API keys are needed)
+
+## Database
+- `users` — id, username, password_hash, failed_attempts, locked_until, created_at
+- `watchlist_items` — id, user_id (FK), title, type, status, rating, notes, poster_url, external_id, created_at
+- 
